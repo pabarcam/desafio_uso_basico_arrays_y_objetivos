@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Centro Médico Ñuñoa</title>
+  </head>
+    <script>
+      document.write('<p>Estadisticas centro medico ñuñoa</p>');
+    </script>
+  <body>
+    <script>
+      var rad = [
+      {
+        hora:'11:00',
+        especialista: 'IGNACIO SCHULZ',
+        paciente: 'FRANCISCA ROJAS',
+        rut: '9878782-1',
+        previsión: 'FONASA'
+      },
+      {
+        hora:'11:30',
+        especialista: 'FEDERICO SUBERCASEAUX',
+        paciente: 'PAMELA ESTRADA',
+        rut: '15345241-3',
+        previsión: 'ISAPRE'
+      },
+      {
+        hora:'15:00',
+        especialista: 'FERNANDO WURTHZ',
+        paciente: 'ARMANDO LUNA',
+        rut: '16445345-9',
+        previsión: 'ISAPRE'
+      },
+      {
+        hora:'15:30',
+        especialista: 'ANA MARIA GODOY',
+        paciente: 'MANUEL GODOY',
+        rut: '17666419-0',
+        previsión: 'FONASA'
+      },
+      {
+        hora:'16:00',
+        especialista: 'PATRICIA SUAZO',
+        paciente: 'RAMON ULLOA',
+        rut: '14989389-K',
+        previsión: 'FONASA'
+      }
+      ]
+      var trau = [
+      {
+        hora:'8:00',
+        especialista: 'MARIA PAZ ALTUZARRA',
+        paciente: 'PAULA SANCHEZ',
+        rut: '15554774-5',
+        previsión: 'FONASA'
+      },
+      {
+        hora:'10:00',
+        especialista: 'RAUL ARAYA',
+        paciente: 'ANGÉLICA NAVAS',
+        rut: '15444147-9',
+        previsión: 'ISAPRE'
+      },
+      {
+        hora:'10:30',
+        especialista: 'MARIA ARRIAGADA',
+        paciente: 'ANA KLAPP',
+        rut: '17879423-9',
+        previsión: 'ISAPRE'
+      },
+      {
+        hora:'11:00',
+        especialista: 'ALEJANDRO BADILLA',
+        paciente: 'FELIPE MARDONES',
+        rut: '1547423-6',
+        previsión: 'ISAPRE'
+      },
+      {
+        hora:'11:30',
+        especialista: 'CECILIA BUDNIK',
+        paciente: 'DIEGO MARRE',
+        rut: '16554741-K',
+        previsión: 'FONASA'
+      },
+      {
+        hora:'12:00',
+        especialista: 'ARTURO CAVAGNARO',
+        paciente: 'CECILIA MENDEZ',
+        rut: '9747535-8',
+        previsión: 'ISAPRE'
+      },
+      {
+        hora:'12:30',
+        especialista: 'ANDRES KANACRI',
+        paciente: 'MARCIAL SUAZO',
+        rut: '11254785-5',
+        previsión: 'ISAPRE'
+      }
+      ]
+
+      const dents =[
+      {
+        hora:'8:30',
+        especialista: 'ANDREA ZUÑIGA',
+        paciente: 'MARCELA RETAMAL',
+        rut: '11123425-6',
+        previsión: 'ISAPRE'
+      },
+      {
+        hora:'11:00',
+        especialista: 'MARIA PIA ZAÑARTU',
+        paciente: 'ANGEL MUÑOZ',
+        rut: '9878789-2',
+        previsión: 'ISAPRE'
+      },
+      {
+        hora:'11:30',
+        especialista: 'SCARLETT WITTING',
+        paciente: 'MARIO KAST',
+        rut: '7998789-5',
+        previsión: 'FONASA'
+      },
+      {
+        hora:'13:00',
+        especialista: 'FRANCISCO VON TEUBER',
+        paciente: 'KARIN FERNANDEZ',
+        rut: '18887662-K',
+        previsión: 'FONASA'
+      },
+      {
+        hora:'13:30',
+        especialista: 'EDUARDO VIÑUELA',
+        paciente: 'HUGO SANCHEZ',
+        rut: '17665461-4',
+        previsión: 'FONASA'
+      },
+      {
+        hora:'14:00',
+        especialista: 'RAQUEL VILLASECA',
+        paciente: 'ANA SEPULVEDA',
+        rut: '14441281-0',
+        previsión: 'ISAPRE'
+      }
+      ]
+
+
+
+      document.write('Primera Atención: ' + dents[0].rut + ' - ' + dents[0].previsión)
+
+      document.write(`<p>Primera Atención: ${dents[0].rut} - ${dents[0].previsión}</p>`)
+
+      document.write(`<p>Última atención: 
+      ${dents[dents.length-1].rut} - ${dents[dents.length-1].previsión}</p>`)
+
+      for(let dent in dents) {
+        if(dents[dent].isFav){
+        document.write(dent)
+        }
+      }
+
+    </script>
+  </body>
+</html>
